@@ -1,0 +1,22 @@
+name: "Validate links"
+
+on:
+  schedule:
+    - cron:  '0 * * * *'
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: 'Validate links'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Start
+        run: python3 main.py
