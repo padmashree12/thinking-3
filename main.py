@@ -156,7 +156,7 @@ def main():
         "//button[@id='reaction-butt-readinglist']").click()
     time.sleep(1)
     print("Now Going to second blog")
-    driver.get("https://dev.to/codewithpom/cheat-sheets-2imc")
+    driver.get("https://dev.to/codewithpom/c-cheat-sheet-1-4n6n")
     time.sleep(2)
     try:
         # find the like button
